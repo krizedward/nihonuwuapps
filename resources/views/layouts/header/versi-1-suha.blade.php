@@ -2,7 +2,7 @@
     <div class="header-area" id="headerArea">
       <div class="container h-100 d-flex align-items-center justify-content-between">
         <!-- Logo Wrapper-->
-        <div class="logo-wrapper"><a href="/"><img src="{{ asset('img/core-img/logo-small.png')}}" alt="logo-serlok"></a></div>
+        <div class="logo-wrapper"><a href="/dashboard"><img src="{{ asset('img/core-img/logo-small.png')}}" alt="logo-serlok"></a></div>
         <!-- Search Form-->
         <!-- <div class="top-search-form">
           <form action="" method="">
@@ -21,16 +21,16 @@
       <div class="offcanvas-body">
         <!-- Sidenav Profile-->
         <div class="sidenav-profile">
-          <div class="user-profile"><img src="{{ asset('img/bg-img/9.jpg') }}" alt=""></div>
+          <div class="user-profile"><img src="{{ asset('img/core-img/profile.jpg') }}" alt=""></div>
           <div class="user-info">
-            <h6 class="user-name mb-1">Edward Kristian Mangare</h6>
+            <h6 class="user-name mb-1">{{ Auth::user()->name }}</h6>
             <p class="available-balance">RATING : <span class="counter">5.0</span></p>
           </div>
         </div>
         <!-- Sidenav Nav-->
         <ul class="sidenav-nav ps-0">
           <li>
-            <a href="/">
+            <a href="/dashboard">
               <i class="lni lni-dashboard"></i>Dashboard
             </a>
           </li>
@@ -78,9 +78,13 @@
           </li>
           <li><a href="settings.html"><i class="lni lni-cog"></i>Settings</a></li> -->
           <li>
-            <a href="/">
-              <i class="lni lni-power-switch"></i>Logout
-            </a>
+            <form method="POST" action="{{ route('logout') }}">
+              @csrf
+              <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                this.closest('form').submit();">
+                <i class="lni lni-power-switch"></i>Logout
+              </a>
+            </form>
           </li>
         </ul>
       </div>

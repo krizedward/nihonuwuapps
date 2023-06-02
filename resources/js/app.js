@@ -1,12 +1,7 @@
 import './bootstrap';
-import {createApp} from 'vue'
-import ExampleComponent from './components/ExampleComponent.vue'
 
-const app = createApp({})
+import Alpine from 'alpinejs';
 
-require('./bootstrap');
+window.Alpine = Alpine;
 
-app.component('example-component', ExampleComponent)
-
-app.mount('#app')
-// membuat single page aplikasi lebih enak pakai vue
+Alpine.start();

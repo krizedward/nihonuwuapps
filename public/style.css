@@ -236,8 +236,8 @@ textarea:invalid {
 
 .btn-warning {
   color: #020310;
-  background-color: #ffaf00;
-  border-color: #ffaf00; }
+  background-color: #ffffff;
+  border-color: #ffffff; }
   .btn-warning:hover, .btn-warning:focus {
     color: #ffffff;
     background-color: #020310;
@@ -1076,8 +1076,8 @@ textarea:invalid {
   width: 100%;
   min-height: 100vh;
   background: #F4928F;
-  background: -webkit-gradient(linear, right top, left top, from(#F4928F), to(#0d3bd1));
-  background: linear-gradient(to left, #F4928F, #0d3bd1);
+  background: -webkit-gradient(linear, right top, left top, from(#F4BCC0), to(#F4928F));
+  background: linear-gradient(to left, #F4BCC0, #F4928F);
   z-index: 10;
   overflow-y: auto;
   padding-top: 1rem;
@@ -1181,7 +1181,7 @@ textarea:invalid {
   color: #ffffff;
   font-weight: 500; }
   .login-meta-data a:hover, .login-meta-data a:focus {
-    color: #ffaf00; }
+    color: #020310; }
 
 .login-meta-data p {
   color: rgba(255, 255, 255, 0.7); }
@@ -1189,7 +1189,7 @@ textarea:invalid {
     color: #ffffff;
     font-weight: 500; }
     .login-meta-data p a:hover, .login-meta-data p a:focus {
-      color: #ffaf00; }
+      color: #020310; }
 
 .go-back-btn {
   -webkit-transition-duration: 400ms;
@@ -1456,8 +1456,8 @@ li.suha-dropdown-menu {
   width: 100%;
   height: 100vh;
   background: #F4928F;
-  background: -webkit-gradient(linear, right top, left top, from(#F4928F), to(#0d3bd1));
-  background: linear-gradient(to left, #F4928F, #0d3bd1);
+  background: -webkit-gradient(linear, right top, left top, from(#F4BCC0), to(#F4928F));
+  background: linear-gradient(to left, #F4BCC0, #F4928F);
   z-index: 1; }
   .intro-wrapper .background-shape {
     position: absolute;
@@ -2861,8 +2861,8 @@ li.suha-dropdown-menu {
   position: relative;
   width: 100%;
   background: #F4928F;
-  background: -webkit-gradient(linear, right top, left top, from(#F4928F), to(#0d3bd1));
-  background: linear-gradient(to left, #F4928F, #0d3bd1);
+  background: -webkit-gradient(linear, right top, left top, from(#F4BCC0), to(#F4928F));
+  background: linear-gradient(to left, #F4BCC0, #F4928F);
   height: 100vh;
   top: 0;
   left: 0;
@@ -3111,8 +3111,8 @@ li.suha-dropdown-menu {
 
 .support-wrapper .faq-heading {
   background: #F4928F;
-  background: -webkit-gradient(linear, left top, right top, from(#F4928F), to(#00b894));
-  background: linear-gradient(to right, #F4928F, #00b894);
+  background: -webkit-gradient(linear, left top, right top, from(#F4BCC0), to(#F4928F));
+  background: linear-gradient(to right, #F4BCC0, #F4928F);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -3430,8 +3430,8 @@ li.suha-dropdown-menu {
       position: absolute;
       content: "";
       background: #F4928F;
-      background: -webkit-gradient(linear, right top, left top, from(#F4928F), to(#0d3bd1));
-      background: linear-gradient(to left, #F4928F, #0d3bd1);
+      background: -webkit-gradient(linear, right top, left top, from(#F4BCC0), to(#F4928F));
+      background: linear-gradient(to left, #F4BCC0, #F4928F);
       z-index: -10;
       border-radius: 6px;
       opacity: .8; }
@@ -3593,8 +3593,8 @@ li.suha-dropdown-menu {
               flex: 0 0 30px;
       max-width: 30px;
       background: #F4928F;
-      background: -webkit-gradient(linear, right top, left top, from(#F4928F), to(#0d3bd1));
-      background: linear-gradient(to left, #F4928F, #0d3bd1);
+      background: -webkit-gradient(linear, right top, left top, from(#F4BCC0), to(#F4928F));
+      background: linear-gradient(to left, #F4BCC0, #F4928F);
       color: #ffffff;
       text-align: center;
       font-size: 1rem;

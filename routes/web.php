@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\KategoriProdukController;
 use App\Http\Controllers\KategoriTalentController;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -10,38 +10,34 @@ use App\Http\Controllers\KategoriTalentController;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
-// note client :
-// membuat form validasi untuk client yang ingin menggunakan aplikasi [v]
-// membuat form rating untuk memberikan nilai kepada service [v]
-// membuat profile ke client dengan talent yang ada dengan profil toko. [v]
-// merubah gambar logo dan warna aplikasi sesuai logo [v]
+Route::get('/', function () {
+    return view('welcome');
+    // return view('talent.dashboard');
+});
 
-// Ketegori Produk
-// Route::get('kategori-produk', [KategoriProdukController::class, 'index'])->name('kategori.produk.index');
-// Route::get('kategori-produk', [KategoriProdukController::class, 'index'])->name('kategori.produk.index');
-// Route::get('kategori-produk/create', [KategoriProdukController::class, 'create'])->name('kategori.produk.create');
-// Route::post('kategori-produk', [KategoriProdukController::class, 'store'])->name('kategori.produk.store');
-// Route::get('kategori-produk/{id}/edit', [KategoriProdukController::class, 'edit'])->name('kategori.produk.edit');
-// Route::get('kategori-produk/{id}', [KategoriProdukController::class, 'show'])->name('kategori.produk.show');
-// Route::put('kategori-produk/{id}', [KategoriProdukController::class, 'update'])->name('kategori.produk.update');
-// Route::delete('kategori-produk/{id}', [KategoriProdukController::class, 'destroy'])->name('kategori.produk.destroy');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+    // return view('client.dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
 
 Route::prefix('admin')->group(function () {
     // awal
     Route::get('registrasi-talent', function () {
         return view('admin.registrasi-talent.index');
     });
-});
-
-Route::get('/', function () {
-    // return view('welcome');
-    // return view('admin.dashboard');
-    return view('client.dashboard');
 });
 
 Route::get('/old', [KategoriTalentController::class, 'index'])->name('admin.kategori-talent.index');
