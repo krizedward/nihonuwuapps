@@ -53,21 +53,15 @@
         <div class="suha-footer-nav h-100">
           <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
             <li>
-                <a href="/dashboard">
+                <a href="/">
                     <i class="lni lni-home"></i>
                     Home
                 </a>
             </li>
-            <!-- <li>
+            <li>
                 <a href="/talent/pelayanan">
                     <i class="lni lni-users"></i>
                     Service
-                </a>
-            </li> -->
-            <li>
-                <a href="#">
-                    <i class="lni lni-bar-chart"></i>
-                    Performa 
                 </a>
             </li>
             <li>
@@ -77,11 +71,12 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/talent/pembayaran">
                     <i class="lni lni-wallet"></i>
-                    Dompet
+                    Payment
                 </a>
             </li>
+            
             <li>
                 <a href="/talent/akun">
                     <i class="lni lni-user"></i>
