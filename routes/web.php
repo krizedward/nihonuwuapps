@@ -182,3 +182,8 @@ Route::get('/talent/akun', function () {
     // pelayanan
     return view('talent.akun.profile');
 });
+
+Route::get('talent/under-maintance', function () {
+    // pelayanan
+    return view('talent.under-maintance');
+});

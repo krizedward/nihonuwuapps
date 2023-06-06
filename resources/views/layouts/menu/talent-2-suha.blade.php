@@ -65,19 +65,19 @@
                 </a>
             </li> -->
             <li>
-                <a href="/talent/under-maintance">
+                <a href="#">
                     <i class="lni lni-bar-chart"></i>
                     Performa 
                 </a>
             </li>
             <li>
-                <a href="/talent/under-maintance">
+                <a href="/talent/client-dating">
                     <i class="lni lni-heart"></i>
                     Dating
                 </a>
             </li>
             <li>
-                <a href="/talent/under-maintance">
+                <a href="#">
                     <i class="lni lni-wallet"></i>
                     Dompet
                 </a>

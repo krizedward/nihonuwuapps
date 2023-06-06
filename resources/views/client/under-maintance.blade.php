@@ -7,10 +7,12 @@
         <!-- Offline Area-->
         <div class="offline-area-wrapper py-3 d-flex align-items-center justify-content-center">
           <div class="offline-text text-center"><img class="mb-4 px-4" src="img/bg-img/no-internet.png" alt="">
-            <h5>No Internet Connection!</h5>
-            <p>Seems like you're offline, please check your internet connection. This page doesn't support when you offline!</p><a class="btn btn-primary" href="/">Back Home</a>
+            <h5>Sorry, Under Maintance.</h5>
+            <p>Fitur ini masih offline, Dalam proses pengembangan developer. Mohon maaf atas ketidak nyamanan Anda.</p>
+            <a class="btn btn-primary" href="/dashboard">Kembali</a>
           </div>
         </div>
       </div>
     </div>
+    @include('layouts.menu.client-main-suha')
 @endsection
