@@ -42,7 +42,7 @@
       </div>
     </div>
     
-    @include('layouts.header.versi-1-suha')
+    @include('layouts.header.versi-main-suha')
     
     @yield('main')
     

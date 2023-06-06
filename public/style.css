@@ -1820,7 +1820,7 @@ li.suha-dropdown-menu {
       width: 22px;
       height: 22px;
       display: inline-block;
-      background-color: #8A4821;
+      background-color: #ea4c62;
       text-align: center;
       color: #ffffff;
       line-height: 22px;
@@ -3514,7 +3514,7 @@ li.suha-dropdown-menu {
       width: 24px;
       height: 24px;
       display: inline-block;
-      background-color: #00b894;
+      background-color: #ea4c62;
       text-align: center;
       color: #ffffff;
       line-height: 24px;
@@ -3561,8 +3561,8 @@ li.suha-dropdown-menu {
 .user-info-card {
   position: relative;
   z-index: 1;
-  background-color: #ffaf00;
-  border-color: #ffaf00;
+  background-color: #F4928F;
+  border-color: #F4928F;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
   .user-info-card .user-profile {

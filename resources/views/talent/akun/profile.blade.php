@@ -29,7 +29,7 @@
                 <div class="title d-flex align-items-center">
                   <i class="lni lni-user"></i><span>Nama Asli</span>
                 </div>
-                <div class="data-content">{{ Auth::user()->name }}</div>
+                <div class="data-content">{{ Auth::user()->talent->biodata->id }}</div>
               </div>
               <div class="single-profile-data d-flex align-items-center justify-content-between">
                 <div class="title d-flex align-items-center">
@@ -50,21 +50,21 @@
                 <div class="data-content">Mojokerto</div>
               </div>
 
-              <div class="single-profile-data d-flex align-items-center justify-content-between">
+              <!-- <div class="single-profile-data d-flex align-items-center justify-content-between">
                 <div class="title d-flex align-items-center">
                   <i class="lni lni-users"></i><span>Tinggi Badan</span>
                 </div>
                 <div class="data-content">143 cm</div>
-              </div>
+              </div> -->
 
-              <div class="single-profile-data d-flex align-items-center justify-content-between">
+              <!-- <div class="single-profile-data d-flex align-items-center justify-content-between">
                 <div class="title d-flex align-items-center">
                   <i class="lni lni-users"></i><span>Account Payment</span>
                 </div>
                 <div class="data-content">6105169853 - Nur Fitria Andani</div>
-              </div>
+              </div> -->
 
-              <div class="single-profile-data d-flex align-items-center justify-content-between">
+              <!-- <div class="single-profile-data d-flex align-items-center justify-content-between">
                 <div class="title d-flex align-items-center">
                   <i class="lni lni-users"></i><span>Hobi</span>
                 </div>
@@ -104,7 +104,7 @@
                   <i class="lni lni-users"></i><span>Hal Yang Tidak Disukai</span>
                 </div>
                 <div class="data-content">Request Cosplay, Dengerin Curhat, Random Talk, Friendly, Pengertian, Debat, Cerita Anime, Cerewet</div>
-              </div>
+              </div> -->
               <!-- Edit Profile-->
               <!-- <div class="edit-profile-btn mt-3"><a class="btn btn-info w-100" href="/pengaturan/profile/edit"><i class="lni lni-pencil me-2"></i>Edit Profile</a></div> -->
             </div>

@@ -28,4 +28,60 @@ class Talent extends Model
         'slug',
         'status',
     ];
+    
+    public function akun_pembayaran()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function biodata()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function deskripsi()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function dislike()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function domisili()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function fisik()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function foto()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
+
+    public function hobi()
+    {
+        // return $this->hasOne('App\Models\Talent','user_id');
+        // return $this->hasOne('App\Models\TalentBiodata', 'talent_id');
+        // return $this->belongsTo(Talent::class);
+    }
 }
