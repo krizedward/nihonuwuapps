@@ -41,6 +41,7 @@
         <div class="sr-only">Loading...</div>
       </div>
     </div>
+    @include('sweetalert::alert')
     
     @include('layouts.header.versi-main-suha')
     

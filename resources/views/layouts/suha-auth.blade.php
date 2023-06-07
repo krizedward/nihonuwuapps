@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="{{ asset('style.css')}}">
     <!-- Web App Manifest-->
     <link rel="manifest" href="{{ asset('manifest.json')}}">
+
+    <!-- Sweetalert2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
   </head>
   <body>
     <!-- Preloader-->
@@ -40,6 +44,8 @@
         <div class="sr-only">Loading...</div>
       </div>
     </div>
+
+    @include('sweetalert::alert')
 
     @yield('main')
     

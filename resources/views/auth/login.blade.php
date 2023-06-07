@@ -26,7 +26,8 @@
             </div>
             <!-- Login Meta-->
             <div class="login-meta-data"><a class="forgot-password d-block mt-3 mb-1" href="{{ route('password.request') }}">Forgot Password?</a>
-              <p class="mb-0">Didn't have an account?<a class="ms-1" href="{{ route('register') }}">Register Now</a></p>
+              <p class="mb-0">Didn't have an account?<a class="ms-1" href="#" onclick="hapusKategori()">Register Now</a></p>
+              <!-- <p class="mb-0">Didn't have an account?<a class="ms-1" href="{{ route('register') }}">Register Now</a></p> -->
             </div>
             <!-- View As Guest-->
             <!-- <div class="view-as-guest mt-3"><a class="btn" href="home.html">View as Guest</a></div> -->
@@ -34,4 +35,22 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function hapusKategori() {
+        Swal.fire({
+          title: 'Apa Anda Yakin?',
+          text: "Mengahapus kategori Akan Berakibat Kehilangan Data!",
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Iya, Hapus Data!',
+        }).then((result) => {
+          if (result.value) {
+            window.location = "#";
+          }
+        }) 
+      }
+    </script>
 @endsection

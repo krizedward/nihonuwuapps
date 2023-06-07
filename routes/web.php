@@ -3,6 +3,7 @@
 use App\Http\Controllers\KategoriTalentController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use RealRashid\SweetAlert\Facades\Alert;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    Alert::success('Success', 'You have been successfully logged in.')->autoclose(3000);
     return view('welcome');
     // return view('talent.dashboard');
 });
