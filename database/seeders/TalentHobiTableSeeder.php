@@ -19,6 +19,7 @@ class TalentHobiTableSeeder extends Seeder
         //
         TalentHobi::create([
             'talent_id' => 1,
+            'deskripsi_hobi' => null,
         ]);
     }
 }

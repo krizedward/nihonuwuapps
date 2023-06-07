@@ -19,6 +19,7 @@ class TalentSuaraTableSeeder extends Seeder
         //
         TalentSuara::create([
             'talent_id' => 1,
+            'suara_profile' => null,
         ]);
     }
 }

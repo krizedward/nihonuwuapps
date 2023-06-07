@@ -19,6 +19,7 @@ class TalentDeskripsiTableSeeder extends Seeder
         //
         TalentDeskripsi::create([
             'talent_id' => 1,
+            'deskripsi_singkat' => null,
         ]);
     }
 }

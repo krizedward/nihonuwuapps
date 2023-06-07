@@ -19,6 +19,10 @@ class TalentFotoTableSeeder extends Seeder
         //
         TalentFoto::create([
             'talent_id' => 1,
+            'foto_profile' => null,
+            'foto_album' => null,
+            'foto_talent' => null,
+            'foto_ktp' => null,
         ]);
     }
 }

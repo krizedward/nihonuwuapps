@@ -19,6 +19,8 @@ class TalentSifatTableSeeder extends Seeder
         //
         TalentSifat::create([
             'talent_id' => 1,
+            'deskripsi_sifat' => 'manja',
+            'status_sifat' => 'positif',
         ]);
     }
 }

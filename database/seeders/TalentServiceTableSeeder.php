@@ -19,6 +19,7 @@ class TalentServiceTableSeeder extends Seeder
         //
         TalentService::create([
             'talent_id' => 1,
+            'status_service' => null,
         ]);
     }
 }

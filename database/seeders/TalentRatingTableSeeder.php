@@ -19,6 +19,8 @@ class TalentRatingTableSeeder extends Seeder
         //
         TalentRating::create([
             'talent_id' => 1,
+            'nilai_rating' => null,
+            'detail_review' => null,
         ]);
     }
 }

@@ -19,6 +19,12 @@ class TalentSocialMediaTableSeeder extends Seeder
         //
         TalentSocialMedia::create([
             'talent_id' => 1,
+            'whatsapp_number' => null,
+            'telegram_number' => null,
+            'email' => null,
+            'instagram_account' => null,
+            'twitter_account' => null,
+            'tiktok_account' => null,
         ]);
     }
 }

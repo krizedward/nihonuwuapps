@@ -18,6 +18,10 @@ class TalentFisikTableSeeder extends Seeder
         //
         TalentFisik::create([
             'talent_id' => 1,
+            'tinggi_badan' => null,
+            'berat_badan' => null,
+            'warna_kulit' => null,
+            'warna_rambut' => null,
         ]);
     }
 }

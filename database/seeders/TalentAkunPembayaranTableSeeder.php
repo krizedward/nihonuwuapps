@@ -19,6 +19,12 @@ class TalentAkunPembayaranTableSeeder extends Seeder
 
         TalentAkunPembayaran::create([
             'talent_id' => 1,
+            'nama_bank' => 'bank ina',
+            'nama_e-wallet' => null,
+            'nomor_bank' => '23456789',
+            'nomor_e-wallet' => null,
+            'nama_pemilik_bank' => 'nana',
+            'nama_pemilik_e-wallet' => null,
         ]);
     }
 }

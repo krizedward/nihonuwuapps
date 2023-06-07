@@ -19,6 +19,7 @@ class TalentLikeTableSeeder extends Seeder
         //
         TalentLike::create([
             'talent_id' => 1,
+            'deskripsi_like' => null,
         ]);
     }
 }

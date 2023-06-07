@@ -19,6 +19,7 @@ class TalentDislikeTableSeeder extends Seeder
         //
         TalentDislike::create([
             'talent_id' => 1,
+            'deskripsi_dislike' => null,
         ]);
     }
 }

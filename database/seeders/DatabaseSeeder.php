@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
             TalentRatingTableSeeder::class,
             TalentDeskripsiTableSeeder::class,
             TalentServiceTableSeeder::class,
+            TalentSocialMediaTableSeeder::class,
             // KategoriSuplierTableSeeder::class,
             // tambahkan seeder lainnya di sini jika ada
         ]);
